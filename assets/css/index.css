@@ -1,13 +1,27 @@
+:root {
+  --color-black-first: #000000;
+  --color-black-second: #3a4042;
+  --color-black-third: #828282;
+  --color-first: #78a0dc;
+  --color-third: #6392d6;
+  --color-fourth: #4c5b84;
+  --color-second: #002e8b;
+  --color-white: #ffffff;
+  --color-error: #ba1f33;
+  --color-success: #62c370;
+  --color-warning: #ceb02a;
+}
+
 header {
   display: flex;
   justify-content: space-between;
-  background-color: #002e8b;
-  border-bottom: 10px solid #000;
+  background-color: var(--color-second);
+  border-bottom: 10px solid var(--color-black-first);
   padding: 7px 17px;
 }
 
 header img {
-  border: 3px solid #78a0dc;
+  border: 3px solid var(--color-first);
 }
 
 nav {
@@ -17,7 +31,7 @@ nav {
 a {
   display: inline-flex;
   align-items: center;
-  color: #fff;
+  color: var(--color-white);
   font-size: 20px;
   font-family: "Fira Code", Arial, Helvetica, sans-serif;
   font-weight: 500;
@@ -27,7 +41,7 @@ a {
 
 a::before {
   content: "";
-  background-color: #78a0dc;
+  background-color: var(--color-first);
   width: 10px;
   height: 10px;
   margin-right: 10px;
@@ -35,17 +49,17 @@ a::before {
 
 #button {
   display: inline-block;
-  background-color: #78a0dc;
+  background-color: var(--color-first);
   height: 60px;
   line-height: 60px;
   padding: 0 20px 0 20px;
-  box-shadow: 5px 5px 0px #000000;
+  box-shadow: 5px 5px 0px var(--color-black-first);
   margin-right: 0;
-  transition: 0.3s;
+  transition: background-color 0.2s linear;
 }
 
 #button:hover {
-  background-color: #6392d6;
+  background-color: var(--color-third);
 }
 
 #button:active {
