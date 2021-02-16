@@ -46,25 +46,3 @@ a::before {
   height: 10px;
   margin-right: 10px;
 }
-
-#button {
-  display: inline-block;
-  background-color: var(--color-first);
-  height: 60px;
-  line-height: 60px;
-  padding: 0 20px 0 20px;
-  box-shadow: 5px 5px 0px var(--color-black-first);
-  margin-right: 0;
-  transition: background-color 0.2s linear;
-}
-
-#button:hover {
-  background-color: var(--color-third);
-}
-
-#button:active {
-  position: relative;
-  top: 5px;
-  left: 5px;
-  box-shadow: none;
-}
