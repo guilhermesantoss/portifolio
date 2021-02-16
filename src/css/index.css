@@ -3,7 +3,7 @@ header {
   justify-content: space-between;
   background-color: #002e8b;
   border-bottom: 10px solid #000;
-  padding: 7px 20px;
+  padding: 7px 17px;
 }
 
 header img {
@@ -40,4 +40,17 @@ a::before {
   line-height: 60px;
   padding: 0 20px 0 20px;
   box-shadow: 5px 5px 0px #000000;
+  margin-right: 0;
+  transition: 0.3s;
+}
+
+#button:hover {
+  background-color: #6392d6;
+}
+
+#button:active {
+  position: relative;
+  top: 5px;
+  left: 5px;
+  box-shadow: none;
 }
